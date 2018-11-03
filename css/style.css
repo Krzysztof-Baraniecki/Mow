@@ -13,11 +13,14 @@ h1{
     margin-bottom: 2.2rem;
 }
 
-nav h2{
+nav .logo h2{
     font-size: 2.2rem;
     color: #EEF4F2;
     margin: 0.5rem 0rem 1.8rem 0rem;
-    padding-left: 1rem;
+}
+
+nav .myAccount h2{
+    margin: 0rem 0rem 0.8rem 0rem;
 }
 
 footer h5{
@@ -27,10 +30,15 @@ footer h5{
     margin-right: 1.92rem;
 }
 
+.myAccount_text{
+    font-size: 1.2rem;
+    color: #EEF4F2;
+}
+
 nav, section{
     display: block;
     float: left;
-    height: 97vh;
+    min-height: 97vh;
 }
 
 nav{
@@ -55,22 +63,70 @@ footer{
     text-align: right;
 }
 
+.admin{
+    border-top: 2px solid #CDD6D5;
+    position: relative;
+    /* display: none; */
+}
+.admin::after{
+    content: "Panel Administracyjny";
+    color: #fff;
+    position: absolute;
+    top: -16px;
+    margin-left: 2rem;
+    z-index: 2;
+    padding: .4rem;
+    background: #233656;
+    border: 2px solid #CDD6D5;
+}
+
 nav li{
-    padding: 1.4rem .6rem;
+    padding: 0.8rem .6rem;
     width: 100%;
     margin-bottom: 0.2rem;
+    display: flex;
+    align-items: center;
     color: #EEF4F2;
     text-transform: uppercase;
 }
 
-
-ul:hover > li{
+nav ul:hover > li {
     opacity: 0.6;
 }
 
-ul:hover > li:hover{
+/* nav ul:hover > a, li{
+    opacity: 0.6;
+} */
+
+nav a, a:hover{
+    text-decoration: none;
+    color: #EEF4F2;
+}
+
+nav ul:hover > a li:hover{
     background: #415B76;
     color: #EEF4F2;
+    text-decoration: none;
     opacity: 1;
 }
 
+
+/* icon */
+
+nav ion-icon{
+    color: #fff;
+    margin: 0 .8rem;
+    font-size: 2.4rem;
+}
+
+nav li ion-icon{
+    color: #fff;
+    margin: 0rem 1rem;
+    font-size: 2.4rem;
+}
+
+.myAccount h2 ion-icon{
+    width: 100%;
+    margin:  auto;
+    font-size: 6.4rem;
+}

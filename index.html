@@ -8,27 +8,30 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Leyout MOW</title>
+    <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
 </head>
 <body>
     <main>
         <nav>
-            <div class="test"><h2>{img}logo</h2>
-                <ul>
-                    <li>{icon}Lista Podopiecznych</li>
-                    <li>{icon}Dodaj Podopiecznego</li>
-                    <li>{icon}Edytuj Podopiecznego</li>
-                    <li>{icon}Dodaj Nowego Użytkownika</li>
-                    <li>{icon}Edytuj Użytkownika</li>
-                    <li>{icon}Edytuj grupy</li>
-                    <li>{icon}Program24</li>
-                    <li>{icon}Edytuj Program24</li>
+            <div class="logo"><h2><ion-icon name="cube"></ion-icon>Reso24</h2>
+                <ul class="user">
+                    <a href="#!"><li><ion-icon name="people"></ion-icon>Lista Podopiecznych</li></a>
+                    <a href="#!"><li><ion-icon name="person-add"></ion-icon>Dodaj Podopiecznego</li></a>
+                    <a href="#!"><li><ion-icon name="create"></ion-icon>Edytuj Podopiecznego</li></a>
+                </ul>
+                <ul class="admin">
+                    <a href="#!"><li><ion-icon name="add-circle"></ion-icon>Dodaj Nowego Użytkownika</li></a>
+                    <a href="#!"><li><ion-icon name="contact"></ion-icon>Edytuj Użytkownika</li></a>
+                    <a href="#!"><li><ion-icon name="contacts"></ion-icon>Edytuj grupy</li></a>
+                    <a href="#!"><li><ion-icon name="barcode"></ion-icon>Program24</li></a>
+                    <a href="#!"><li><ion-icon name="options"></ion-icon>Edytuj Program24</li></a>
                 </ul>
           </div>
-            <div><h2>{img}user</h2>
+            <div class="myAccount"><h2><ion-icon name="contact"></ion-icon></h2>
+                <p class="myAccount_text">Zalogowany Imie Nazwisko</p>
                 <ul>
-                    <li>Zalogowany Imie Nazwisko</li>
-                    <li>{icon}Edytuj Konto</li>
-                    <li>{icon}Wyloguj</li>
+                    <a href="#!"><li><ion-icon name="switch"></ion-icon>Edytuj Konto</li></a>
+                    <a href="#!"><li><ion-icon name="exit"></ion-icon>Wyloguj</li></a>
                 </ul>
             </div>
         </nav>
@@ -36,7 +39,7 @@
             <h1>Lista Podopiecznych</h1>
             {table}
         </section>
-        <footer><h5>Twórca serwisu Krzysztof Baraniecki. webyou.krzysztof@gmail.com</h5></footer>
+        <footer><h5>Projekt oraz realizacja serwisu Krzysztof Baraniecki. webyou.krzysztof@gmail.com</h5></footer>
     </main>
 <!--start Bootstrap JS, Popper.js, and jQuery-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -46,8 +49,8 @@
 </body>
 </html>
 
-<li title="#233656" style="background: #233656"></li>
+<li title="#233656" style="background: #233656; border-top: 2px solid #000"></li>
 <li title="#415B76" style="background: #415B76"></li>
 <li title="#7B9BA6" style="background: #7B9BA6"></li>
 <li title="#CDD6D5" style="background: #CDD6D5"></li>
-<li title="#EEF4F2" style="background: #EEF4F2"></li>
+<li title="#EEF4F2" style="background: rgb(206, 206, 206)"></li>

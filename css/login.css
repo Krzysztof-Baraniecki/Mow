@@ -1,0 +1,34 @@
+@import url(reset.css);
+
+html{
+color: #cecece;
+}
+
+body{
+ background: #cecece;
+ height: 100vh;
+ width: 100%;
+}
+
+.login-col{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    display: block;
+    width: 33%;
+    height: 300px;
+    background: #233656;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background: #233656;
+    width: 100%;
+    text-align: center;
+}

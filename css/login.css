@@ -16,15 +16,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .login{
     display: block;
     width: 33%;
     min-width: 400px;
+    max-width: 800px;
     min-height: 300px;
     background: #233656;
     padding: 1rem;
+    box-shadow: 1px 8px 146px 20px rgba(0,0,0,0.69);
+    /* -webkit-box-shadow: 1px 8px 146px 20px rgba(0,0,0,0.69);
+    -moz-box-shadow: 1px 8px 146px 20px rgba(0,0,0,0.69); */
 }
 
 .login form input{
@@ -35,11 +40,51 @@ body{
     background: none;
     border: none;
     border-bottom: 2px solid #CDD6D5;
+    transition: all 0.4s ease-in-out;
+    outline: none;
+    cursor: pointer;
 }
 
-.login form input[type="submit"]{
+.login form input[type="button"]{
+    background: #7B9BA6;
+    width: 75%;
+    display: block;
+    margin: 1rem auto;
+    color: #CDD6D5;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border-bottom: none;
+}
 
-    background: green;
+.login form input[type="button"]:hover{
+background: #CDD6D5;
+color: #415B76;
+}
+
+.login form input::placeholder{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #7B9BA6;
+}
+.login form input{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #cecece;
+}
+.login form input:focus{
+    background-color: #415B76;
+}
+
+.login-logo{
+    font-size: 2rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.lost-login{
+    /* color: red; */
 }
 
 

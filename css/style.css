@@ -39,21 +39,19 @@ footer h5{
 
 nav, section{
     display: block;
-    float: left;
     min-height: 97vh;
 }
 
 nav{
     display: flex;
+    float: left;
     flex-direction: column;
     justify-content: space-between;
-    width: auto;
     background: #233656;
-    padding: 1rem 0;
+    padding: 1rem 0 ;
 }
 
 section{
-    width: 75%;
     background: #fff;
     padding: 2rem;
 }
@@ -83,7 +81,7 @@ footer{
 }
 
 nav li{
-    padding: 0.8rem .6rem;
+    padding: 0.8rem 1.6rem;
     width: 100%;
     margin-bottom: 0.2rem;
     display: flex;
@@ -132,17 +130,75 @@ nav li ion-icon{
 
 /* end icon */
 
-/* rwd start */
+/* rwd start <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (max-width: 1024px) {
     nav{
-        margin-left: -60%;
+        margin-left: -100%;
         z-index: 20;
         position: relative;
         transition: all .7s;
-        width: 60%;
+        left: 0;
     }
+    .icon{
+        position: fixed;
+        left: 1rem;
+        color: #fff;
+        background: #233656;
+        border: 1px solid #152033;
+        border-radius: 50%;
+        padding: 0.6rem;
+        z-index: 10;
+        }
+
+    .test{
+        position: absolute;
+        display: block;
+        background: #233656;
+        height: 3.5rem;
+        width: 0;
+        padding: 0 3rem;
+        margin-left: 2.5rem;
+        opacity: 0;
+        line-height: 3.55rem;
+        transition: all 0.6s;
+        font-size: 1rem;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+    .test::after{
+        content: '';
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: green;
+        height: 100%;
+        /* width: 50%; */
+        opacity: 0.5;
+    }
+    
+    li:hover .test{
+        color: #fff;
+        background: #233656;
+        position: fixed;
+        left: 1rem;
+        opacity: 1;
+        width: 22rem;
+    }
+
+  nav .user{
+      margin-bottom: 1.5rem;
+  }
+
+    li{
+        margin: 2.5rem;
+    }
+    
+
+
     nav::after{
         content:'X';
+        position: absolute;
         width: 5rem;
         height: 5rem;
         top: 10px;
@@ -150,7 +206,12 @@ nav li ion-icon{
         background: red;
     }
     nav:hover{
-        margin-left: 0;
+        /* margin-left: 0; */
     }
+
+    section{
+        /* width: 40%; */
+    }
+
   }
-/* rwd end */ 
+/* rwd end <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/ 

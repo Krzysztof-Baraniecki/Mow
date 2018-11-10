@@ -165,7 +165,7 @@ nav li ion-icon{
         border-top-right-radius: 2rem;
         border-bottom-right-radius: 2rem;
     }
-    .test::after{
+    /* .test::after{
         content: '';
         overflow: hidden;
         position: absolute;
@@ -173,9 +173,9 @@ nav li ion-icon{
         top: 0;
         background: green;
         height: 100%;
-        /* width: 50%; */
+        width: 50%;
         opacity: 0.5;
-    }
+    } */
     
     li:hover .test{
         color: #fff;
@@ -193,10 +193,8 @@ nav li ion-icon{
     li{
         margin: 2.5rem;
     }
-    
 
-
-    nav::after{
+    /* nav::after{
         content:'X';
         position: absolute;
         width: 5rem;
@@ -204,14 +202,12 @@ nav li ion-icon{
         top: 10px;
         left: 100%;
         background: red;
-    }
-    nav:hover{
-        /* margin-left: 0; */
-    }
+    } */
 
     section{
-        /* width: 40%; */
+        margin-left: 5rem;
     }
+
 
   }
 /* rwd end <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/ 

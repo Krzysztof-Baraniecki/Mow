@@ -151,21 +151,22 @@ nav li ion-icon{
         }
 
     .test{
-        position: absolute;
+        position: fixed;
         display: block;
         background: #233656;
-        height: 3.5rem;
+        height: 3.681rem;
         width: 0;
         padding: 0 3rem;
         margin-left: 2.5rem;
-        opacity: 0;
+        opacity: 1;
         line-height: 3.55rem;
         transition: all 0.6s;
         font-size: 1rem;
         border-top-right-radius: 2rem;
         border-bottom-right-radius: 2rem;
+        overflow: hidden;
     }
-    /* .test::after{
+    .test::after{
         content: '';
         overflow: hidden;
         position: absolute;
@@ -175,7 +176,7 @@ nav li ion-icon{
         height: 100%;
         width: 50%;
         opacity: 0.5;
-    } */
+    }
     
     li:hover .test{
         color: #fff;

@@ -19,10 +19,6 @@ nav .logo h2{
     margin: 0.5rem 0rem 1.8rem 0rem;
 }
 
-nav .myAccount h2{
-    margin: 0rem 0rem 0.8rem 0rem;
-}
-
 footer h5{
     color: #EEF4F2;
     font-size: .82rem;
@@ -32,6 +28,12 @@ footer h5{
 
 ul.user a:last-child li {
     margin-bottom: 1.5rem;
+}
+
+ul.user svg, ul.admin svg, div.myAccount svg{
+    width: 2.5rem;
+    fill: #fff;
+    margin: 0rem 1rem;
 }
 
 .myAccount_text{
@@ -112,26 +114,3 @@ nav ul:hover > a:hover, li:hover{
     text-decoration: none;
     opacity: 1;
 }
-
-
-/* icon */
-
-nav ion-icon{
-    color: #fff;
-    margin: 0 .8rem;
-    font-size: 2.4rem;
-}
-
-nav li ion-icon{
-    color: #fff;
-    margin: 0rem 1rem;
-    font-size: 2.4rem;
-}
-
-.myAccount h2 ion-icon{
-    width: 100%;
-    margin:  auto;
-    font-size: 6.4rem;
-}
-
-/* end icon */

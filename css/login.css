@@ -10,6 +10,8 @@ body{
  width: 100%;
 }
 
+
+
 h1.logo--text{
     position: absolute;
     top: 2%;
@@ -26,6 +28,18 @@ h1.logo--text{
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+}
+
+.login-col::before{
+    content: "";
+    position: fixed;
+    display: block;
+    transform: rotate(10deg);
+    top: 0;
+    height:100%;
+    width: 200%;
+    background: #233656;
+    z-index: 0;
 }
 
 .login{
@@ -132,5 +146,6 @@ footer{
     bottom: 0;
     background: #233656;
     width: 100%;
-    text-align: center;
+    text-align: right;
+    padding: .25em 1rem;
 }

@@ -3,3 +3,18 @@ section input.table{
     border: 2px solid #415B76;
     padding: .7rem;
 }
+
+
+table {
+    counter-reset: rowNumber -1;
+  }
+  
+  table tr {
+    counter-increment: rowNumber;
+  }
+  
+  table tr td:first-child::before {
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
+  }

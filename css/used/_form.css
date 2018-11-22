@@ -1,1 +1,24 @@
-input{}
+label, input, select, textarea{
+    display: block;
+}
+
+input[type="radio"],input[type="checkbox"]{
+    display: inline-block;
+    
+}
+
+label{
+    margin: 1rem 0;
+}
+
+input[type="text"], select, textarea{
+    width: 100%;
+    border-radius: 5px;
+    padding: .8rem;
+}
+
+
+textarea{
+    min-height: 150px;
+    max-height: 500px;
+}

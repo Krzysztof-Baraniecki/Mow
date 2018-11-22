@@ -70,8 +70,45 @@
             </div>
         </nav>
         <section>
-            <h1>Lista Podopiecznych</h1>
-            {table}
+            <h1>Dodaj Podopiecznego</h1>
+            
+            <form>
+                    <label>Imię*:<input type="text" name="name"></label>
+                    <label>Nazwisko*: <input type="text" name="lname"></label>
+                    Płęć*:
+                    <label><input type="radio" name="sex">Chłopiec</label>
+                    <label><input type="radio" name="sex">Dziewczyna</label>
+                    <label>Grupa*: 
+                        <select name="group">
+                            <option value="Gr 1">Gr 1</option>
+                            <option value="Gr 2">Gr 2</option>
+                            <option value="Gr 3">Gr 3</option>
+                        </select>
+                    </label>
+                    <label>Data ur.<input type="date" name="bday"></label>
+                    <label>Komentarz :<input type="text" name="usrname"></label>
+                    <label>Status: <input type="checkbox" name="status"></label>
+                    <label>Patron: 
+                        <select name="guardian">
+                            <option value="123">Adam Kowalski</option>
+                            <option value="321">Agnieszka Wrona</option>
+                            <option value="231">Krzysztof Baraniecki</option>
+                        </select>
+                    </label>
+                    <button type="submit">Dodaj</button>
+                </form>
+            
+            
+            
+            - Imie <br/>
+            - Nazwisko <br/>
+            - Płęć < lista <br/>
+            - Grupa < domyślnie gr osoby wprowadzajacek <br/>
+            - data urodzenia <br/>
+            - komentarz <br/>
+            - zdjęcie <br/>
+            - status < domyśpnie ON <br/>
+            - podopieczny < domyslnie os. wprowadzajaca <br/>
         </section>
         <footer><h5>&copy;2018 - Projekt oraz realizacja serwisu Krzysztof Baraniecki. webyou.krzysztof@gmail.com</h5></footer>
     </main>

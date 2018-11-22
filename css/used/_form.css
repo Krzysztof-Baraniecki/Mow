@@ -4,8 +4,8 @@ label, input, select, textarea{
 
 input[type="radio"],input[type="checkbox"]{
     display: inline-block;
-    
 }
+
 
 label{
     margin: 1rem 0;
@@ -15,8 +15,9 @@ input[type="text"], select, textarea{
     width: 100%;
     border-radius: 5px;
     padding: .8rem;
+    background: none;
+    border: 2px solid #CDD6D5;
 }
-
 
 textarea{
     min-height: 150px;

@@ -6,12 +6,24 @@ input[type="radio"],input[type="checkbox"]{
     display: inline-block;
 }
 
+.sex-radio svg{
+    width: 35px;
+}
 
+
+label[for="m"], label[for="g"]{
+    margin: 0rem;
+    display: inline-block;
+}
 label{
     margin: 1rem 0;
 }
 
-input[type="text"], select, textarea{
+label svg{
+    margin-right:  4rem;
+}
+
+input[type="text"], input[type="date"], select, textarea{
     width: 100%;
     border-radius: 5px;
     padding: .8rem;
@@ -23,3 +35,15 @@ textarea{
     min-height: 150px;
     max-height: 500px;
 }
+
+input[type="checkbox"]{
+width: 100%;
+height: 20px;
+background: red;
+}
+
+input[type="checkbox"]::before{
+background: red;
+}
+
+

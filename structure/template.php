@@ -34,7 +34,7 @@ $template_footer = '
 
 $template_nav = '
 <nav>
-<div class="logo"><h2>{LOGO}Reso24</h2>
+<div class="logo"><a href="index.php"><h2>{LOGO}Reso24</h2></a>
     <ul class="user">
         <a href="#!"><li><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" version="1.1">
             <g id="surface1">

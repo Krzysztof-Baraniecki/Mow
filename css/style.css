@@ -151,3 +151,7 @@ nav ul:hover > a:hover, li:hover{
     text-decoration: none;
     opacity: 1;
 }
+
+section{
+    overflow: hidden;
+}

@@ -1,0 +1,71 @@
+html{
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+h1{
+    font-size: 2.4rem;
+    margin-bottom: 2.2rem;
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+h4{
+
+}
+
+h5{
+    
+}
+
+p{
+
+}
+
+nav, section{
+    display: block;
+    float: left;
+    min-height: 97vh;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    height: 100vh;
+    background: #233656;
+    padding: 1rem 0;
+}
+
+section{
+    width: 80%;
+    background: #fff;
+    padding: 2rem;
+    margin-left: 20%;
+    overflow: hidden;
+}
+
+footer{
+    clear: both;
+    height: 3vh;
+    background: #233656;
+    text-align: right;
+}
+
+footer h5{
+    color: #EEF4F2;
+    font-size: .82rem;
+    line-height: 1.6rem;
+    margin-right: 1.92rem;
+}

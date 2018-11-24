@@ -1,0 +1,12 @@
+section#edAccount ol{
+    list-style: initial;
+    background: red;
+}
+section#edAccount ol li{
+    display: block;
+    padding-left: 1rem;
+    line-height: 2rem;
+}
+section#edAccount ol li:hover{
+    background: blue;
+}

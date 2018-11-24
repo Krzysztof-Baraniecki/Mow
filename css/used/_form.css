@@ -21,7 +21,7 @@ label svg{
     margin-right:  4rem;
 }
 
-input[type="text"], input[type="date"], select, textarea{
+input[type="text"], input[type="date"], input[type="Email"], select, textarea{
     width: 100%;
     border-radius: 5px;
     padding: .8rem;

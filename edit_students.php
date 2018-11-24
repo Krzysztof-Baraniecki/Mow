@@ -7,6 +7,16 @@ require_once 'structure/template.php';
         <section id='edStudent'>
             <h1>Edytucja podopiecznych</h1>
             <p>{lista podopiecznych}</p>
+            <br />
+            -Sortowanie[start-alfabetycznie] <br />
+            -Filtrowanie[-start-gr-usera] <br />
+            -Szukanie podopiecznego <br />
+            |<br />
+            ----lp. avatar Imie Nazwisko Płęć status {edit student[Edycja otwiera sie w popup ]} {del student[del otwiera sie w popup w celu potwierdzenia-zostaje zarchiwizowany]}<br />
+            ----[po kliknieciu na ucznia rozwija sie lista Ocen Miesiecznych Ocen tygodniowych oraz Ocen cząstkowych przy każdej z pozycji jest {edycja oceny}]<br />
+
+            tablica czy div ?
+
         </section>
         <?php echo $template_footer; ?>
     </main>

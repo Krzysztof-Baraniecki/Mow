@@ -1,0 +1,74 @@
+label, input, select, textarea{
+    display: block;
+}
+
+
+input[type="radio"],input[type="checkbox"]{
+    display: inline-block;
+}
+
+.sex-radio svg{
+    width: 35px;
+}
+
+
+label[for="m"], label[for="g"]{
+    margin: 0rem;
+    display: inline-block;
+}
+
+label svg{
+    margin-right:  4rem;
+}
+
+input[type="text"], input[type="date"], select, textarea{
+    width: 100%;
+    border-radius: 5px;
+    padding: .8rem;
+    background: none;
+    border: 2px solid #CDD6D5;
+}
+
+textarea{
+    min-height: 150px;
+    max-height: 500px;
+}
+
+label[for="status"]{
+    display: inline-block;
+}
+
+input[type="checkbox"]{
+    position: relative;
+    animation: all 2s infinite;
+    height: 2rem;
+    padding: 0;
+    width: auto;
+    display: inline-block;
+    top: 10px;
+    left: 0;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"]::after{
+    content: ".Nie_obecny";
+    display: block;
+    width: 2rem;
+    height: 100%;
+    background: red;
+    border-radius: 50%;
+    padding-left: 30px;
+    transition: all .2s ease-out;
+    line-height: 2rem;
+}
+
+input[type="checkbox"]:checked::after{
+    content: ".Obecny";
+    padding-left: 2rem;
+    background: green;
+}
+
+p.e-value{
+    height: 2rem;
+}
+

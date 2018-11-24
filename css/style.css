@@ -1,4 +1,5 @@
 @import url(reset.css);
+@import url(used/_form.css);
 
 html{
 
@@ -149,4 +150,8 @@ nav ul:hover > a:hover, li:hover{
     color: #EEF4F2;
     text-decoration: none;
     opacity: 1;
+}
+
+section{
+    overflow: hidden;
 }

@@ -18,6 +18,7 @@ section#edAccount .btn{
 }
 
 section#edAccount .myStudents{
-    border: 2px solid #233656;
     padding: 1rem;
+    border: 2px solid #233656;
+    border-radius: 20px;
 }

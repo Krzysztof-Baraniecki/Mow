@@ -13,7 +13,9 @@ require_once 'structure/template.php';
             -Szukanie podopiecznego <br />
             |<br />
             ----lp. avatar Imie Nazwisko Płęć status {edit student[Edycja otwiera sie w popup ]} {del student[del otwiera sie w popup w celu potwierdzenia-zostaje zarchiwizowany]}<br />
-            ----[po kliknieciu na ucznia rozwija sie lista Ocen Miesiecznych Ocen tygodniowych oraz Ocen cząstkowych przy każdej z pozycji jest {edycja oceny}]<br />
+            -----[po kliknienciu na danego ucznia otwiera się jego indywidaly profil gdzie sa dane i historia ocen z mozliwością edycji]
+            <br>-----lub
+            <br>-----[po kliknieciu na ucznia rozwija sie lista Ocen Miesiecznych Ocen tygodniowych oraz Ocen cząstkowych przy każdej z pozycji jest {edycja oceny}]<br />
 
             tablica czy div ?
 

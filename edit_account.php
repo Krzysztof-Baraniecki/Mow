@@ -15,6 +15,8 @@ require_once 'structure/template.php';
                         <p class="e-value"></p>
                         <label>E-mail:<input type="Email" name="email" value="aKowalski@domena.pl" disabled="disabled"></label>
                         <p class="e-value"></p>
+                        <label>Nr telefonu: <input type="tel" name="phone"></label>
+                        <p class="e-value"></p>
                         <label>Przepisana grupa: 
                             <select name="group">
                                 <option value="Gr 1">Gr 1</option>

@@ -6,7 +6,6 @@ require_once 'structure/template.php';
         <?php echo $template_nav; ?>
         <section id='edAccount'>
             <h1>Edycja Konta</h1>
-            <p>edytujemy konto</p>
             <form>
                 <div class="row">
                     <div class="col-6">
@@ -14,7 +13,7 @@ require_once 'structure/template.php';
                         <p class="e-value"></p>
                         <label>Nazwisko:<input type="text" name="last-name" value="Kowalski"></label>
                         <p class="e-value"></p>
-                        <label>E-mail:<input type="Email" name="email" value="aKowalski@domena.pl"></label>
+                        <label>E-mail:<input type="Email" name="email" value="aKowalski@domena.pl" disabled="disabled"></label>
                         <p class="e-value"></p>
                         <label>Przepisana grupa: 
                             <select name="group">
@@ -25,12 +24,15 @@ require_once 'structure/template.php';
                         </label>
                         <p class="e-value"></p>
                         <a class="btn btn-outline-primary">Zmień hasło</a>
-                        <h2>Podopieczni przepisani do tego konta:</h2>
-                        <ol>
-                            <li>Adam Kowalski {płeć} Gr 3 {status}</li>
-                            <li>Daniel Pasibus {płeć} Gr 3 {status}</li>
-                            <li>Krzysztof Szczerba {płeć} Gr 3 {status}</li>
-                        </ol>
+                        <a class="btn btn-outline-primary text-right">Zapisz</a>
+                        <div class="myStudents">
+                            <h2>Podopieczni przepisani do tego konta:</h2>
+                            <ol>
+                                <a href="#!"><li>Adam Kowalski {płeć} Gr 3 {status}</li></a>
+                                <a href="#!"><li>Daniel Pasibus {płeć} Gr 3 {status}</li></a>
+                                <a href="#!"><li>Krzysztof Szczerba {płeć} Gr 3 {status}</li></a>
+                            </ol>
+                        </div>
                     </div>
                     <div class="col-6">
                     <div style="width: 300px; height: 300px; background: darkblue; margin: auto; border-radius: 50%;"></div>

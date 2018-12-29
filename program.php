@@ -12,6 +12,10 @@ require_once 'structure/template.php';
     <div class="col-4"><p>Dzieci w ośrodku: <span class="font-weight-bold">86</span></p></div>
     <div class="col-4"><p>Dzieci obecnych: <span class="font-weight-bold">80</span></p></div>
     <div class="col-4"><p>Dzieci nie obecnych: <span class="font-weight-bold">6</span></p></div>
+    <div class="w-100 mt-2"></div>
+    <div class="col-12 text-center"><p>Gr 1 : <span class="font-weight-bold">12</span></p></div>
+    <div class="col-12 text-center"><p>Gr 2 : <span class="font-weight-bold">8</span></p></div>
+    <div class="col-12 text-center"><p>Gr 3 : <span class="font-weight-bold">7</span></p></div>
 </div>
 
             <br /><br />

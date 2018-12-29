@@ -1,0 +1,24 @@
+section#edAccount ol{
+    list-style-type: decimal;
+    padding-left: 2rem;
+}
+section#edAccount ol li{
+    line-height: 2rem;
+}
+section#edAccount ol li:hover{
+    font-weight: bold;
+}
+
+section#edAccount ol a{
+    color: #415B76;
+}
+
+section#edAccount .btn{
+    margin-bottom: 1rem;
+}
+
+section#edAccount .myStudents{
+    padding: 1rem;
+    border: 2px solid #233656;
+    border-radius: 20px;
+}

@@ -35,3 +35,7 @@
 .popup__addPkt{
     padding: 1.5rem;
 }
+
+.popup__addPkt textarea{
+    max-height: 300px;
+}

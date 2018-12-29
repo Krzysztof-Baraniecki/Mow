@@ -2,6 +2,8 @@
 @import url(used/_form.css);
 @import url(used/_main.css);
 @import url(used/_nav.css);
+@import url(used/_table.css);
+@import url(used/_popup.css);
 
 /* subpages */
 @import url(used/_edAccount.css);

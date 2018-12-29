@@ -1,0 +1,41 @@
+
+.modal-content{
+    height: 90vh;
+
+}
+
+.modal-content .modal-body{
+    overflow-y: auto;
+}
+
+#collapseExample{
+    background: red;
+}
+
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 90%;
+    }
+}
+
+.popup__data{
+    font-size: .8rem;
+    margin-bottom: .4rem;
+}
+
+.popup__pkt{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.popup_author{
+    margin-top: .4rem 
+}
+
+.popup__addPkt{
+    padding: 1.5rem;
+}
+
+.popup__addPkt textarea{
+    max-height: 300px;
+}

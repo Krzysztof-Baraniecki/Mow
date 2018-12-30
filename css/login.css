@@ -85,7 +85,7 @@ h1.logo--text{
     cursor: text;
 }
 
-.login form input[type="button"]{
+.login form input[type="submit"]{
     background: #7B9BA6;
     width: 75%;
     display: block;
@@ -99,10 +99,10 @@ h1.logo--text{
     cursor: pointer;
 }
 
-.login form input[type="button"]:hover{
-background: #CDD6D5;
-color: #415B76;
-}
+.login form input[type="submit"]:hover{
+    background: #CDD6D5;
+    color: #415B76;
+    }
 
 .login form input::placeholder{
     font-size: 1rem;

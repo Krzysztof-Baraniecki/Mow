@@ -1,4 +1,13 @@
 <?php
+	
+	session_start();
+    if (!isset($_SESSION['online'])) {
+	header('Location: login.php');
+	exit();
+    }
+
+?>
+<?php
 require_once 'structure/template.php';
 ?>
 <?php echo $template_start; ?>

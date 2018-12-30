@@ -15,13 +15,13 @@
     <section class="login-col">
         <div class="login">
             <div class="login-logo"><ion-icon name="cube" role="img" class="hydrated" aria-label="cube"></ion-icon></div>
-            <form>
+            <form method="post" action="connection/connection.php">
                 <p>Email:</p>
-                <input type="email" name="name1" placeholder="Email">
+                <input type="email" name="login" placeholder="Email">
                 <p>Hasło:</p>
-                <input type="password" name="name2" placeholder="Hasło">
+                <input type="password" name="password" placeholder="Hasło">
                 <p><span class="verification">e_email or e_password</span></p>
-                <input type="button" value="Zaloguj">
+                <input type="submit" class="btn" value="Zaloguj">
                 <p class="lost-login">Nie pamiętam hasła</p>
             </form> 
         </div>

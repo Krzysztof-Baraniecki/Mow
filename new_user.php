@@ -6,7 +6,7 @@ require_once 'structure/template.php';
         <?php echo $template_nav; ?>
         <section id='newUser'>
             <h1>Dodajemy nową urzytkownika</h1>
-            <form>
+            <form method="post" action="controler/add_user.php">
                 <div class="row">
                     <div class="col-lg-6">
                             <label>Imię*:<input type="text" name="name"></label>

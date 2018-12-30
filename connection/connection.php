@@ -26,8 +26,7 @@
 					echo $userQuery->rowCount();
 					$user = $userQuery->fetch();
 					// echo "<- wyników. Dane osoby logownej: ".$user['first_name'] . " " . $user['email']. " " . $user['password'];
-					// if ($user && password_verify($password, $user['password']))
-					if($userQuery->rowCount() == 1) 
+					if ($user && password_verify($password, $user['password']))
 					{
 						$_SESSION['online'] = true;
 						$_SESSION['id_user'] = $user['id_user'];

@@ -5,6 +5,19 @@ require_once 'structure/template.php';
     <main>
         <?php echo $template_nav; ?>
         <section id='listStudents'>
+        <?php 
+        require_once 'connection/database.php';
+
+        $Query = $db->prepare('SELECT * FROM pupils');
+        $Query->execute();
+        $pupils = $Query->fetchAll();
+        $pupil = $Query->fetch();
+        $numberPupils = $Query->rowCount();
+
+        foreach ($pupils as $pupil) { 
+        // echo $pupil['last_name'];
+        }
+        ?>
             <h1>Lista podopiecznych</h1>
 
             <div class="table-responsive">

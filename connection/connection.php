@@ -1,12 +1,4 @@
-﻿<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-</head>
-<body>
-<?php
+﻿<?php
 			session_start();
 
 			require_once 'database.php';
@@ -72,8 +64,6 @@
 			//fetchAll() - przyniesz wszystko
 		//	$users = $usersQuery->fetchAll();
 			//drukuj rekunsywnie.
-			//print_r($users);
+			// print_r($users);
 
 			?>
-</body>
-</html>

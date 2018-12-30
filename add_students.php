@@ -6,15 +6,15 @@ require_once 'structure/template.php';
         <?php echo $template_nav; ?>
         <section id='add_student'>
             <h1>Dodaj Podopiecznego</h1>
-            <form>
+            <form method="post" action="controler/add_pupil.php">
                 <div class="row">
                     <div class="col-lg-6">
-                            <label>Imię*:<input type="text" name="name"></label>
+                            <label>Imię*:<input type="text" name="first_name"></label>
                             <p class="e-value"></p>
-                            <label>Nazwisko*: <input type="text" name="lname"></label>
+                            <label>Nazwisko*: <input type="text" name="last_name"></label>
                             <p class="e-value"></p>
                             <div class="sex-radio">Płęć*:
-                                <input type="radio" name="sex" id="m" class="input-hidden">
+                                <input type="radio" name="sex" id="m" class="input-hidden" value="M">
                                 <label for="m">
                                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
                                             <g>
@@ -34,7 +34,7 @@ require_once 'structure/template.php';
                                             </g>
                                             </svg>    
                                 </label>
-                                <input type="radio" name="sex" id="g" class="input-hidden">
+                                <input type="radio" name="sex" id="g" class="input-hidden" value="K">
                                     <label for="g">
                                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
                                         <g>
@@ -63,19 +63,21 @@ require_once 'structure/template.php';
                                 </select>
                             </label>
                             <p class="e-value"></p>
-                            <label>Data ur.<input type="date" name="bday"></label>
+                            <label>Data ur.<input type="date" name="birth"></label>
                             <p class="e-value"></p>
-                            <label>Komentarz :<textarea name="?" cols="30" rows="5"></textarea></label>
+                            <label>Dane Kontaktowe:<textarea name="contact" cols="30" rows="5"></textarea></label>
+                            <p class="e-value"></p>
+                            <label>Komentarz :<textarea name="comment" cols="30" rows="5"></textarea></label>
                             <p class="e-value"></p>
                             <label for="status">Status: </label>
                             <input id="status" type="checkbox" name="status">
                             <p class="e-value"></p>
                             <label>Patron: 
-                                <select name="guardian">
-                                    <option value="123">Nie ustalony</option>
-                                    <option value="123">Adam Kowalski</option>
-                                    <option value="321">Agnieszka Wrona</option>
-                                    <option value="231">Krzysztof Baraniecki</option>
+                                <select name="patron">
+                                    <option value="nic">Nie ustalony</option>
+                                    <option value="Adam Kowalski">Adam Kowalski</option>
+                                    <option value="Agnieszka Wrona">Agnieszka Wrona</option>
+                                    <option value="Krzysztof Baraniecki">Krzysztof Baraniecki</option>
                                 </select>
                             </label>
                             <p class="e-value"></p>

@@ -24,6 +24,8 @@ require_once 'structure/template.php';
                 <li>zadanie 4</li>
                 <li>zadanie 5</li>
             </ul>
+    <br />
+            <?php echo "Hello " . $_SESSION['last_name'] . " " . $_SESSION['first_name']; ?>
         </section>
         <?php echo $template_footer; ?>
     </main>

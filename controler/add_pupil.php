@@ -3,7 +3,6 @@ session_start();
 
 if (isset($_SESSION['online']) && isset($_POST['first_name']) && isset($_POST['last_name'])){
 // dodaj pozostałe posty z obowiązkowych oraz walidacje 
-// `pupils`(`id_pupil`, `first_name`, `last_name`, `center`, `sex`, `group`, `comment`, `status`, `who_add`, `contact`, `patron`, `birth`)
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
     $sex = $_POST['sex'];
@@ -20,7 +19,7 @@ if (isset($_SESSION['online']) && isset($_POST['first_name']) && isset($_POST['l
 
     echo "wprowadzono:> " . $first_name . " " . $last_name . " " . $sex . " " . $group. " " .$comment. " " .$status. " " .$contact. " " .$patron. " " .$birth;
 
-    $insert = $db->prepare('INSERT INTO pupils VALUES (NULL, :first_name, :last_name, "NULL", :sex, :group, :comment, :status, "NULL", :contact, :patron, :birth, "NULL")');
+    $insert = $db->prepare('INSERT INTO pupils VALUES (NULL, :first_name, :last_name, "NULL", :sex, :group, :comment, :status, "NULL", :contact, :patron, :birth, "NULL", "Brak Oceny", "0000-00-00", "Brak Oceny", "0000-00-00")');
     $insert->bindValue(':first_name', $first_name, PDO::PARAM_STR);
     $insert->bindValue(':last_name', $last_name, PDO::PARAM_STR);
     $insert->bindValue(':sex',  $sex, PDO::PARAM_STR);

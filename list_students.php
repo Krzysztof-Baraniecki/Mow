@@ -5,6 +5,25 @@ require_once 'structure/template.php';
     <main>
         <?php echo $template_nav; ?>
         <section id='listStudents'>
+
+        <!-- new list -->            
+        <h1>Lista podopiecznych</h1>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Imie</th>
+                        <th scope="col">Nazwisko</th>
+                        <th scope="col">Płęć</th>
+                        <th scope="col">Gr</th>
+                        <th scope="col">Ocena<br /> Tygodniowa</th>
+                        <th scope="col">Ocena<br /> Miesięczna</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+
         <?php 
         require_once 'connection/database.php';
 
@@ -13,11 +32,29 @@ require_once 'structure/template.php';
         $pupils = $Query->fetchAll();
         $pupil = $Query->fetch();
         $numberPupils = $Query->rowCount();
+        $i = 1;
 
-        foreach ($pupils as $pupil) { 
-        // echo $pupil['last_name'];
+        foreach ($pupils as $item) { 
+            echo '
+            <tr data-toggle="modal" data-target="#nazwa">
+                <th scope="row">'.$i.'</th>
+                <td>'.$item['first_name'].'</td>
+                <td>'.$item['last_name'].'</td>
+                <td>'.$item['sex'].'</td>
+                <td>'.$item['group'].'</td>
+                <td>'.$item['month'].'</td>
+                <td>'.$item['week'].'</td>
+                <td>'.$item['status'].'</td>
+            </tr>
+        ';
+        $i++;
         }
         ?>
+
+                </tbody> 
+                </table>
+
+        <hr /><!-- old list -->
             <h1>Lista podopiecznych</h1>
 
             <div class="table-responsive">
